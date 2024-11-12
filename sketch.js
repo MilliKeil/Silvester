@@ -50,7 +50,7 @@ function mouseMoved() {
     speedY: random(-1, 1),
   });
   textAlign(CENTER, CENTER);
-    textSize(32);
+    textSize(45);
     fill(random(100, 255), random(100, 255), random(100, 255));
     text("31.12.2024 20:00", width / 2, height / 2);
     text("Kahlstraße 17", width / 2, height / 1.8);
@@ -66,7 +66,7 @@ function touchMoved() {
     speedY: random(-1, 1),
   });
   textAlign(CENTER, CENTER);
-    textSize(32);
+    textSize(45);
     fill(random(100, 255), random(100, 255), random(100, 255));
     text("31.12.2024 20:00", width / 2, height / 2);
     text("Kahlstraße 17", width / 2, height / 1.8);
@@ -78,7 +78,7 @@ function touchMoved() {
 function mousePressed() {
   background(255);
   textAlign(CENTER, CENTER);
-    textSize(32);
+    textSize(45);
     fill(random(100, 255), random(100, 255), random(100, 255));
     text("31.12.2024 20:00", width / 2, height / 2);
     text("Kahlstraße 17", width / 2, height / 1.8);
