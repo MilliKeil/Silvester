@@ -5,28 +5,19 @@ let showText = false; // boolean to control when the text appears
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background(0);
-
-  // Set a timeout to show the text after 1 second (1000 milliseconds)
-  setTimeout(() => {
-    showText = true;
-  }, 1000);
 }
 
 function draw() {
   background(0, 10); // shape out
-
-  // Check if we should show the text
-  if (showText) {
-    // Center the text
-  }
-
+  textSize(15);
+  text("Wis(c)ht euch ein Feuerwerk!", width/2, height-50);
   fill(random(100, 255), random(100, 255), random(100, 255));
   noStroke();
 
   // Loop through the items array to draw ellipses
   for (let i = 0; i < items.length; i++) {
     let item = items[i];
-    ellipse(item.posX, item.posY, random(5)); 
+    ellipse(item.posX, item.posY, random(5));
     item.posX = item.posX + item.speedX;
     item.posY = item.posY + item.speedY;
 
@@ -50,12 +41,12 @@ function mouseMoved() {
     speedY: random(-1, 1),
   });
   textAlign(CENTER, CENTER);
-    textSize(45);
-    fill(random(100, 255), random(100, 255), random(100, 255));
-    text("31.12.2024 20:00", width / 2, height / 2);
-    text("Kahlstraße 17", width / 2, height / 1.8);
-    text("bring snacks + drinks", width / 2, height / 1.65);
-    text("❤️", width / 2, height / 1.5);
+  textSize(32);
+  fill(random(100, 255), random(100, 255), random(100, 255));
+  text("31.12.2024 20:00", width / 2, height / 2);
+  text("Kahlstraße 17", width / 2, height / 1.8);
+  text("bring snacks + drinks", width / 2, height / 1.65);
+  text("❤️", width / 2, height / 1.5);
 }
 
 function touchMoved() {
@@ -66,24 +57,24 @@ function touchMoved() {
     speedY: random(-1, 1),
   });
   textAlign(CENTER, CENTER);
-    textSize(45);
-    fill(random(100, 255), random(100, 255), random(100, 255));
-    text("31.12.2024 20:00", width / 2, height / 2);
-    text("Kahlstraße 17", width / 2, height / 1.8);
-    text("bring snacks + drinks", width / 2, height / 1.65);
-    text("❤️", width / 2, height / 1.5);
+  textSize(32);
+  fill(random(100, 255), random(100, 255), random(100, 255));
+  text("31.12.2024 20:00", width / 2, height / 2);
+  text("Kahlstraße 17", width / 2, height / 1.8);
+  text("bring snacks + drinks", width / 2, height / 1.65);
+  text("❤️", width / 2, height / 1.5);
   return false; // Prevents default scrolling behavior on touch
 }
 
 function mousePressed() {
   background(255);
   textAlign(CENTER, CENTER);
-    textSize(45);
-    fill(random(100, 255), random(100, 255), random(100, 255));
-    text("31.12.2024 20:00", width / 2, height / 2);
-    text("Kahlstraße 17", width / 2, height / 1.8);
-    text("bring snacks + drinks", width / 2, height / 1.65);
-    text("❤️", width / 2, height / 1.5);
+  textSize(32);
+  fill(random(100, 255), random(100, 255), random(100, 255));
+  text("31.12.2024 20:00", width / 2, height / 2);
+  text("Kahlstraße 17", width / 2, height / 1.8);
+  text("bring snacks + drinks", width / 2, height / 1.65);
+  text("❤️", width / 2, height / 1.5);
 }
 
 function touchStarted() {
