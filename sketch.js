@@ -8,7 +8,7 @@ function setup() {
 }
 
 function draw() {
-  background(0, 10); // shape out
+  background(0, 5); // shape out
   fill(random(100, 255), random(100, 255), random(100, 255));
   noStroke();
 
