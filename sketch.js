@@ -9,8 +9,6 @@ function setup() {
 
 function draw() {
   background(0, 10); // shape out
-  textSize(15);
-  text("Wis(c)ht euch ein Feuerwerk!", width/2, height-50);
   fill(random(100, 255), random(100, 255), random(100, 255));
   noStroke();
 
@@ -31,6 +29,11 @@ function draw() {
       items.splice(i, 1); // remove item
     }
   }
+  // Draw persistent text in the lower-left corner
+  textAlign(LEFT, BOTTOM);
+  textSize(20); // Set font size for the persistent text
+  fill(random(100, 255), random(100, 255), random(100, 255));
+  text("Wis(c)ht euch ein Feuerwerk!", 10, height - 10); // Position near the lower-left corner
 }
 
 function mouseMoved() {
