@@ -30,8 +30,8 @@ function draw() {
     }
   }
   // Draw persistent text in the lower-left corner
-  textAlign(LEFT, BOTTOM);
-  textSize(40); // Set font size for the persistent text
+  textAlign(CENTER, BOTTOM);
+  textSize(45); // Set font size for the persistent text
   fill(random(100, 255), random(100, 255), random(100, 255));
   text("Wis(c)ht euch ein Feuerwerk!", 10, height - 10); // Position near the lower-left corner
 }
